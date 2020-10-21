@@ -45,6 +45,7 @@ class OrderTableSeeder extends Seeder
             'image_part'=> null,
             'job_type' => '1',
             'cash' => 200,
+            'allow_zero' => 1
         ]);
 
         Order::create([
@@ -106,6 +107,7 @@ class OrderTableSeeder extends Seeder
             'image_part'=> null,
             'job_type' => '1',
             'cash' => 200,
+            'allow_zero' => 1
         ]);
 
         Order::create([
