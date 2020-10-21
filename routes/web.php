@@ -15,8 +15,10 @@
 Auth::routes();
 
 
-if ($_SERVER['HTTP_HOST'] == "youcandojewelry.com" ) {
-    URL::forceScheme('https');
+if (isset($_SERVER['HTTP_HOST'])) {
+    if ($_SERVER['HTTP_HOST'] == "youcandojewelry.com" ) {
+        URL::forceScheme('https');
+    }
 }
 
 Route::get('/', function () {
